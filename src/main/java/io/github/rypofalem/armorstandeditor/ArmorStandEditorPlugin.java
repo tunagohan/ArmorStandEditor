@@ -56,13 +56,7 @@ public class ArmorStandEditorPlugin extends JavaPlugin{
 		//saveResource doesn't accept File.seperator on windows, need to hardcode unix seperator "/" instead
 		updateConfig("", "config.yml");
 		updateConfig("lang/", "test_NA.yml");
-		updateConfig("lang/", "nl_NL.yml");
-		updateConfig("lang/", "uk_UA.yml");
-		updateConfig("lang/", "zh.yml");
-		updateConfig("lang/", "fr_FR.yml");
-		updateConfig("lang/", "ro_RO.yml");
 		updateConfig("lang/", "ja_JP.yml");
-		updateConfig("lang/", "de_DE.yml");
 		//English is the default language and needs to be unaltered to so that there is always a backup message string
 		saveResource("lang/en_US.yml", true);
 		lang = new Language(getConfig().getString("lang"), this);
